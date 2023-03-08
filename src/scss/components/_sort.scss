@@ -1,0 +1,130 @@
+@import '../variables';
+
+.sort {
+  position: relative;
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 0;
+
+  &__select {
+    width: 130px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+
+
+    b {
+      margin-right: 8px;
+      @media (max-width: 992px) {
+        display: none;
+      }
+      @media (max-width: 668px) {
+        display: block;
+      }
+    }
+
+    span {
+      color: $orange;
+      border-bottom: 1px dashed $orange;
+      cursor: pointer;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 160px;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.sort-select {
+  &__input {
+    :after {
+      content: none !important;
+      width: 0 !important;
+      height: 0 !important;
+    }
+  }
+  &__input-container {
+    cursor: pointer !important;
+  }
+  &__control {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  &__single-value {
+    font-weight: 700 !important;
+    text-align: center !important;
+    border-bottom: 1px dashed $orange !important;
+    color: $orange !important;
+  }
+  &__indicator-separator {
+    display: none !important;
+  }
+  &__indicators {
+    cursor: pointer !important;
+  }
+  &__indicator {
+    color: #232323 !important;
+    &:hover {
+      color: #fe5f1e !important;
+    }
+  }
+  &__menu {
+    animation: scaleIn 0.2s ease-in-out;
+    background: #fff !important;
+  }
+  &__option {
+    cursor: pointer !important;
+    &--is-focused {
+      background: darken(#fff, 10%) !important;
+    }
+    &--is-selected {
+      font-weight: bold !important;
+      color: $orange !important;
+      background: #FFF6F5 !important;
+    }
+  }
+}
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

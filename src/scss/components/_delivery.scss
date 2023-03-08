@@ -1,0 +1,14 @@
+.delivery {
+  &__content {
+    display: flex;
+    margin-top: 60px;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+

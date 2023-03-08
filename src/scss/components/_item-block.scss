@@ -1,0 +1,122 @@
+@import '../variables';
+
+.item-content {
+  display: flex;
+  justify-content: center;
+  @media (max-width: 668px) {
+    display: block;
+  }
+}
+.item-block {
+  max-width: 290px;
+  text-align: center;
+  margin-bottom: 65px;
+  background: #fff;
+  border-radius: 25px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.2s;
+  @media (max-width: 1156px) {
+    max-width: 270px;
+  }
+  @media (max-width: 870px) {
+    max-width: 290px;
+    margin-bottom: 25px;
+  }
+  @media (max-width: 668px) {
+    max-width: 100%;
+    padding: 20px;
+  }
+  @media (min-width: 992px) {
+    &:hover {
+      box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    }
+  }
+  &__ingredients {
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    @media (max-width: 1156px) {
+      font-size: 16px;
+    }
+    @media (max-width: 668px) {
+      font-size: 20px;
+    }
+  }
+
+  &__selector {
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 6px;
+
+    ul {
+      display: flex;
+      flex: 1;
+
+      li {
+        padding: 8px;
+        flex: 1;
+        margin: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        transition: color 0.3s;
+        @media (max-width: 1156px) {
+          font-size: 12px;
+        }
+        @media (max-width: 870px) {
+          font-size: 14px;
+        }
+        @include noselect();
+        &.active {
+          background: #ffffff;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+          border-radius: 5px;
+          cursor: auto;
+          color: #fe5f1e;
+        }
+        &:hover {
+          color: #fe5f1e;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+  }
+}

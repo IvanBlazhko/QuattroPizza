@@ -1,0 +1,46 @@
+@import '../variables';
+
+.categories {
+    @media (max-width: 992px) {
+      width: 100%;
+      overflow-x: scroll;
+    }
+  ul {
+    display: flex;
+    gap: 16px;
+    @media (max-width: 992px) {
+      width: 570px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      background-color: #ffffff;
+      padding: 10px 15px;
+      letter-spacing: 1.6px;
+      border-radius: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+      @include noselect();
+      @media (max-width: 992px) {
+        border: 2px solid #e0e0e0;
+      }
+
+      &:hover {
+        @media (min-width: 992px) {
+          color: #ffffff;
+          background-color: darken(#f9f9f9, 35%);
+        }
+      }
+
+      &:active {
+        background-color: darken(#f9f9f9, 5%);
+      }
+
+      &.active {
+        background-color: #282828;
+        color: #fff;
+      }
+    }
+  }
+}
