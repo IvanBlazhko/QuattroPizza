@@ -17,7 +17,7 @@ if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
 
   root.render(
-    <BrowserRouter>
+    <BrowserRouter basename="QuattroPizza">
       <Provider store={store}>
         <PersistGate loading={null} persistor={persist}>
           <App />
