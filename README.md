@@ -3,6 +3,20 @@
 ## 
 ![](https://d3dehtdmp2rwcw.cloudfront.net/ms_560954/VU4eWphCdxbffCBMQQvdrG47fQg4ZJ/demo.jpg?Expires=1677231000&Signature=eRcsLyOOfL3bbo2wMNXMM~iWQvoXMjZllNQM40S0vgF~yD56mq2rg5UEs~bY--pKqSw5AVp7Ex8Giw~6fcHTO2e9ZxsbgqSyjC4yvio1xt66DtZ32PpJK2hpDxVGIo38LUtORAhbYEGWgxmn2N6ACw9Wi9T3cB-AbvCKzLF~PNNa7cvEr5Oyvy0y46G9WFVOspzrq9o~NYhlPmPMlAJAkx5xK7pdOypLvY6B1ZBJJi7JNIa9fd4juTKwyrP~GnYdk-1qYAJ2egxRxl8-O3b2GsliXP0L0bkUCmyfe74fB92BOvool1c-FPQSj-jpLP3q1BA2L6IoeEXlOlL~tq9VYQ__&Key-Pair-Id=APKAJBCGYQYURKHBGCOA)
 
+## Функції:
+ - Типізація - Type Script.
+ - Реалізовані сторінки Піци, Десертів, Напоїв, Кошику та Сторінка Доставки.
+ - Маршрутизація між сторінками.
+ - Отримання даних з API за допомогою RTK Query.
+ - Сортування продукції за опціями, ціною та алфавітом.
+ - Регуляція ціни в залежності від вибраних параметрів.
+ - Додано Redux логіку кошику.
+ - Групування елементів кошику за параметрами.
+ - Сторінка доставки з формою заповнення даних валідована за допомогою React Hook Form.
+ - Зберігання даних у localstorage за допомогою Redux Persist.
+ - Сповіщення користувача React Toastify.
+ - Лодери React-Spinners.
+ - За стилізацію відповідає SCSS.
 
 ## Як підготувати та запустити проєкт
 
